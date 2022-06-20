@@ -1,0 +1,32 @@
+[
+    {
+      "Id": 1,
+      "Name": "PlayStation-4 500 GB",
+      "Price": "500,00",
+      "img_src": "images/ps4.jpg"
+    },
+    {
+      "Id": 2,
+      "Name": "PlayStation-5 1 TB",
+      "Price": "1250,00",
+      "img_src": "images/ps5.jpg"
+    },
+    {
+      "Id": 3,
+      "Name": "iPhone 13 Pro Max 256 GB",
+      "Price": "2200,00",
+      "img_src": "images/iPhone 13 Pro Max.jpg"
+    },
+    {
+      "Id": 4,
+      "Name": "Samsung TV 70 inch 4K Ultra HD Smart TV",
+      "Price": "500,00",
+      "img_src": "images/Samsung 70.jpg"
+    },
+    {
+      "Id": 5,
+      "Name": "Dell XPS 13",
+      "Price": "1500,00",
+      "img_src": "images/Dell XPS 13.jpg"
+    }
+]
