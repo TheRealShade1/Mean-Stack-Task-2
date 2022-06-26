@@ -1,114 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Shopping Cart</title>
-  </head>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <h2>SHOP</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="cart">
+                    <a href="cart.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <body>
-         <!-- header  -->
-         <header>
+    <div class="container">
+        <div class="image">
+            <img src="images/ps4.jpg" style="width:250px; height:285px; border:none;" alt="PS4">
+            <h3>PlayStation-4 500 GB</h3>
+            <h3>$500,00</h3>
+            <a class="add-cart cart1" href="#">Add to Cart</a>
+            <input type="hidden" value="500" />
+        </div>
+        <div class="image">
+            <img src="images/ps5.jpg" style="width:250px; height:285px; border:none;" alt="PS5">
+            <h3>PlayStation-5 1 TB</h3>
+            <h3>$1250,00</h3>
+            <a class="add-cart cart2" href="#">Add to Cart</a>
+            <input type="hidden" value="1250" />
+        </div>
+        <div class="image">
+            <img src="images/iPhone 13 Pro Max.jpg" style="width:250px; height:285px; border:none;" alt="iPhone 13-Pro-Max">
+            <h3>iPhone 13 Pro Max 256 GB</h3>
+            <h3>$2200,00</h3>
+            <a class="add-cart cart3" href="#">Add to Cart</a>
+            <input type="hidden" value="2200" />
+        </div>
+        <div class="image">
+            <img src="images/Samsung 70.jpg" style="width:250px; height:285px; border:none;" alt="Samsung TV 70 inch">
+            <h3>Samsung TV 70 inch 4K Ultra HD Smart TV</h3>
+            <h3>$500,00</h3>
+            <a class="add-cart cart4" href="#">Add to Cart</a>
+            <input type="hidden" value="500" />
+        </div>
+        <div class="image">
+            <img src="images/Dell XPS 13.jpg" style="width:250px; height:285px; border:none;" alt="Dell XPS">
+            <h3>Dell XPS 13</h3>
+            <h3>$1500,00</h3>
+            <a class="add-cart cart5" href="#">Add to Cart</a>
+            <input type="hidden" value="1500" />
+        </div>
+    </div>
 
-            <main  class = "main-container">
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-                <section class="section">
-                    <h2 class="section-title">Products</h2>
-
-                    <div class="products">
-
-                      <div class="product">
-                        <img class="product-image" src="images/ps4.jpg" alt="PS4" />
-                        <h2 class="product-name">PlayStation-4 500 GB</h2>
-                        <h3 class="product-price">500,00</h3>
-                        <button class="btn btn-primary" data-action="add-to-cart">
-                          Add To Cart
-                        </button>
-                      </div>
-
-                      <div class="product">
-                        <img class="product-image" src="images/ps5.jpg" alt="PS5" />
-                        <h2 class="product-name">PlayStation-5 1 TB</h2>
-                        <h3 class="product-price">1250,00</h3>
-                        <button class="btn btn-primary" data-action="add-to-cart">
-                          Add To Cart
-                        </button>
-                      </div>
-
-                      <div class="product">
-                        <img class="product-image" src="images/iPhone 13 Pro Max.jpg" alt="iPhone 13-Pro-Max" />
-                        <h2 class="product-name">iPhone 13 Pro Max 256 GB</h2>
-                        <h3 class="product-price">2200,00</h3>
-                        <button class="btn btn-primary" data-action="add-to-cart">
-                          Add To Cart
-                        </button>
-                      </div>
-
-                      <div class="product">
-                        <img class="product-image" src="images/Samsung 70.jpg" alt="Samsung TV 70 inch" />
-                        <h2 class="product-name">Samsung TV 70 inch 4K Ultra HD Smart TV</h2>
-                        <h3 class="product-price">500,00</h3>
-                        <button class="btn btn-primary" data-action="add-to-cart">
-                          Add To Cart
-                        </button>
-                      </div>
-
-                      <div class="product">
-                        <img class="product-image" src="images/Dell XPS 13.jpg" alt="Dell XPS" />
-                        <h2 class="product-name">Dell XPS 13</h2>
-                        <h3 class="product-price">1500,00</h3>
-                        <button class="btn btn-primary" data-action="add-to-cart">
-                          Add To Cart
-                        </button>
-                      </div>
-
-                    </div>
-                </section>
-             </main>
-
-        </header>
-        <!-- footer  -->
-        <footer>
-
-            <main  class = "main-container">
-
-                <section class="section">
-                    <h2 class="section-title">Cart</h2>
-
-                    <div class="cart">
-
-                      <div class="cart-item"> 
-                        <img class="cart-item-image" src="images/Cooler master PC Case.jpg" alt="Cooler master Case" />
-                        <h2 class="cart-item-name">Cooler master PC Case</h2>
-                        <h3 class="cart-item-price">100,00</h3>
-                        <button class="btn btn-primary btn-small" data-action="decrease-item">
-                            &minus;
-                          </button>
-                          <h3 class="cart-item-quantity">1</h3>
-                          <button class="btn btn-primary btn-small" data-action="increase-item">
-                            &plus;
-                          </button>
-                          <button class="btn btn-primary btn-small" data-action="remove-item">
-                            &times;
-                          </button>
-                      </div> 
-
-                    </div>
-                             <div class="cart-footer">
-                              <h2 class="cart-footer-total" data-action="total-price">1</h2>
-                              <button class="btn btn-primary btn-small btn-danger" data-action="clear-cart">Clear Cart</button>
-                              <button class="btn btn-primary btn-small btn-danger" data-action="checkout">Checkout</button>
-                            </div> 
-                </section>
-             </main>
-
-        </footer>
-
-        <script src="cart.js"></script>
-
-    </body>
-
+</body>
 </html>
